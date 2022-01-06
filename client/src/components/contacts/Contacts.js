@@ -45,7 +45,7 @@ const Contacts = ({}) => {
 
     return (
         <>
-        <h1>Contact page</h1>
+        <h1>Contact me</h1>
         <ContactForm addContact={addContact} />
         <ContactList contacts={contacts} 
         updateContact={updateContact}

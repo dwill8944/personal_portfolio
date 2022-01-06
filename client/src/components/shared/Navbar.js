@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import ContactList from '../contacts/ContactList';
-//   import { Navbar, Container } from 'react-bootstrap';
+   import { Navbar, Container } from 'react-bootstrap';
 
-const Navbar = ({}) => {
+const MainNavbar = ({}) => {
     return (
         <>
-          <nav>
+          {/* <nav>
             <ul>
                 <Link to='/'>
                     <li>Home</li>
@@ -23,26 +23,58 @@ const Navbar = ({}) => {
                 <Link to ='/project'><li>Projects</li></Link>
                 <Link to ='/work'><li>Work</li></Link>
             </ul>
-        </nav>  
+        </nav>   */}
 
- {/* <Navbar bg="dark" variant="dark">
+  <Navbar bg="dark" variant="dark">
   <Container>
     <Navbar.Brand > 
                 <Link to='/'>
                     Home
                 </Link></Navbar.Brand>
         <Navbar.Toggle />
-            <Navbar.Collapse className="justify-content-end">
+            {/* <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
                 <Link to ='/contacts'>
                     Contacts
                 </Link>
                 </Navbar.Text>
+   
             </Navbar.Collapse>
+            <Navbar.Toggle /> */}
+            <Navbar.Brand>
+         
+                <Link to= '/about'>
+                    About
+                </Link>
+                </Navbar.Brand>
+                
+                <Navbar.Toggle />
+                <Navbar.Brand><Link to = '/skill'>
+                    Skills
+                </Link> </Navbar.Brand>
+                    <Navbar.Toggle />
+                
+                <Navbar.Brand>  <Link to ='/project'>
+                    Projects</Link>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                        
+                    <Navbar.Brand><Link to ='/work'>
+                        Work</Link> </Navbar.Brand>
+                        <Navbar.Toggle />
+                        <Navbar.Collapse className="justify-content-end">
+                <Navbar.Text>
+                <Link to ='/contacts'>
+                    Contacts
+                </Link>
+                </Navbar.Text>
+   
+            </Navbar.Collapse>
+            
             </Container>
-        </Navbar>  */}
+        </Navbar>  
         </>
     )
 }
 
-export default Navbar;
+export default MainNavbar;
